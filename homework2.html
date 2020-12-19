@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .clear:after{
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .head2{
+            border-bottom: 1px solid rgba(218, 218, 218, 0.705);
+            height: 32px;
+            line-height: 32px;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .info{
+            float: right; 
+        }
+        .info li{
+            float: left;
+            margin-left: 27px;
+        }
+        .iphone{
+            background: url(./web/iphone.png) no-repeat left center;
+            padding-left: 17px;
+        }
+        .weixin{
+            background: url(./web/weixin.png) no-repeat left center;
+            padding-left: 24px;
+        }
+        .info a{
+            font-size: 12px;
+            font-weight: 300;
+            color: rgba(0,0,0,1);
+        }
+        #logo{
+            float: left;
+            margin-left: 3px;
+            height: 40px;
+        }
+        .nav{
+            float: left;
+            margin-top: 15px;
+        }
+        .form{
+            float: right;
+            margin-top: 8px;
+        }
+        .nav li{
+            float: left;
+            width: 122px;
+            text-align: center;
+            border-right: 1px solid black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .nav a{
+            color: rgba(0,0,0,1);
+        }
+        .head3{
+            height: 25px;
+        }
+        .head3 p{
+            margin-left: 500px;
+            width: 200px;
+        }
+        .head4{
+            margin: 0 auto;
+            width: 1200px;
+            overflow: hidden;
+            height: 200px;
+        }
+        .middle1{
+            height: 80px;
+        }
+        .first{
+            margin-left: 40px;
+        }
+        .search{
+            float: left;
+            width: 145px;
+            padding: 9px;
+            border: 1px solid rgb(85, 164, 255);
+        }
+        .submit{
+            float: left;
+            width: 36px;
+            height: 36px;
+            background:rgb(85, 164, 255) url(./web/search.png) no-repeat center center;
+            border: 1px solid rgb(85, 164, 255);
+            margin-right: 32px;
+        }
+        .banner{
+            height: 550px;
+            position: relative;
+        }
+        .banner li{
+            width: 100%;
+            height: 550px;
+            position: absolute;
+        }
+        #banner1{
+            background: url(./winner/picture1.jpg) no-repeat center center;
+        }
+        #prev,#next{
+            position: absolute;
+            width: 106px;
+            height: 106px;
+            top: 220px;
+            left: 8%
+        }
+        #next{
+            left: auto;
+            right: 8%
+        }
+        .li1{
+            font-size: 20px;
+            font-weight: 300;
+            color: rgba(0,0,0,1);
+            margin-left: 70px;
+            margin-right: 30px;
+        }
+        .li2{
+            font-size: 16px;
+            font-weight: 300;
+            color: rgba(0,0,0,1);
+            margin-top: 15px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .p1{
+            font-size: 20px;
+            font-weight: 300;
+            color: rgba(0,0,0,1);
+            margin-left: 20px;
+            margin-right: 30px;
+        }
+        .middle2{
+            height: 200px;
+            
+        }
+        .middle3{
+            height: 30px;
+            margin-left: 50px;
+        }
+        .second{
+            height: 650px;
+            width: 100%;
+        }
+        .product1{
+            float: left;
+        }
+        .product1 li{
+            float: left;
+            position: relative;
+            font-size: 20px;
+            margin-left: 180px;
+            margin-top: 20px;
+        }
+        .product1 li div{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background:rgb(0, 119, 255, 0.6);
+            text-align: center;
+        }
+        h3{
+            font-size: 30px;
+        }
+        .product img{
+            
+            vertical-align: bottom;
+        }
+        a:hover{
+            color: orange;
+        }
+        .div{
+            margin-bottom: 20px;
+            height: 80px;
+            width: 300px;
+        }
+        .div1{
+            border: 1px solid rgb(0, 68, 255);
+            width: 300px;
+            height: 50px;
+            
+        }
+        .div2{
+            float: left;
+        }
+        .p{
+            font-size: 15px;
+            color: rgb(0, 81, 255);
+        }
+        #box1{
+            margin-top: 17px;
+            border: none;
+            outline: none;
+        }
+        #box2{
+            margin-top: 17px;
+            border: none;
+            outline: none;
+        }
+        #btn{
+            width: 300px;
+            height: 50px;
+            background-color: rgb(0, 47, 255);
+            border: none;
+            color: white;
+            font-size: 20px;
+        }
+        #div1{
+            float: left;
+        }
+        #p{
+            font-size: 10px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        <div class="head1">
+            <div class="head2">
+                <div class="container clear">
+                    <img src="./winner/img-f6f63ae65a449e03de1dad7fc5e741f3.jpg" alt="Winner" id="logo">
+                    <ul class="info clear">
+                        <li class="iphone"><a href="#">移动客户端</a></li>
+                        <li class="weixin"><a href="#">微信</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="head3">
+                <div class="head4">
+                    <p class="title"><strong>WE  ARE  WINNER</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <ul>
+                <li id="banner1"></li>
+            </ul>
+            <img src="./web/1592080545724.png" alt="上一页" id="prev"/>
+            <img src="./web/1592080545723.png" alt="下一页" id="next">
+        </div>
+        <div class="middle1 clear">
+            <ul class="nav clear">
+                <li class="first"><a href="#">打歌舞台</a></li>
+                <li><a href="#">团综</a></li>
+                <li><a href="#">杂志写真</a></li>
+                <li><a href="#" class="last">官方周边</a></li>
+            </ul>
+            <form class="form clear">
+                <input type="text" placeholder="成员/代表作品" class="search" id="search">
+                <input type="button" class="submit">
+                <p id="p"></p>
+            </form>
+        </div>
+        <div class="middle2">
+            <ul>
+                <li class="li1"><strong>组合介绍</strong></li>
+                <li class="li2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINNER（위너）是韩国YG Entertainment于2014年推出的男子组合，以姜昇润、金秦禹、李昇勋、宋旻浩四人形式展开活动。WINNER是YG酝酿8年推出的男团，不算成员的培养、挑选，仅出道筹备工作就耗时将近一年，故而一出道就气势如虹。团内各位成员包办了《2014S/S》中大多数歌曲的创作，展现了音乐创作实力，三个主唱、两个Rapper都各有特色，特别是都很有声音辨识度。WINNER以感性Hippop出道，在出道的同时便创下音源榜单“All Kill”的记录，用自己作词作曲占取了乐坛一席之地，让人对他们的未来充满期待。</li>
+            </ul>
+        </div>
+        <div class="middle3">
+            <p class="p1"><strong>成员介绍</strong></p>
+        </div>
+        <hr/>
+        <div class="second">
+            <div class="container clear product">
+                <ul class="product1 clear">
+                    <li>
+                        <img src="./winner/1608016243756.jpeg" alt="姜昇润" width="340px" height="450px" id="img1"/>
+                        <div id="info1">
+                            <h3>姜昇润</h3>
+                            <p>队长 Main Vocal  1994年1月21日出生于韩国釜山，歌手、演员，韩国男子组合WINNER的队长兼主唱。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./winner/1608016248398.jpeg" alt="宋旻浩" width="340px" height="450px" id="img2"/>
+                        <div id="info2">
+                            <h3>宋旻浩</h3>
+                            <p>Rapper  1993年3月30日出生于韩国，韩国男歌手、演员、主持人，男子演唱组合WINNER成员。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./winner/1608016236022.jpeg" alt="金秦禹" width="340px" height="450px" id="img3"/>
+                        <div id="info3">
+                            <h3>金秦禹</h3>
+                            <p>Vocal 门面担当  1991年9月26日出生于韩国全罗南道灵岩郡，韩国男歌手，男子演唱组合WINNER成员之一。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./winner/v2-e6e675489fe1efeef04dd93768c88ca2.jpg" alt="李昇勋" width="340px" height="450px" id="img4"/>
+                        <div id="info4">
+                            <h3>李昇勋</h3>
+                            <p>主领舞 Rapper  1992年1月11日出生于韩国釜山，韩国男歌手、作词人、编舞师。男子组合WINNER的成员</p>
+                        </div>
+                    </li>  
+                </ul>
+            </div>
+            <div>
+                <button id="btn1">回到顶部</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script>
+    var search = document.getElementById("search");
+    var banner1 = document.getElementById("banner1");
+    var img1 = document.getElementById("img1");
+    var img2 = document.getElementById("img2");
+    var img3 = document.getElementById("img3");
+    var img4 = document.getElementById("img4");
+    var info1 = document.getElementById("info1");
+    var info2 = document.getElementById("info2");
+    var info3 = document.getElementById("info3");
+    var info4 = document.getElementById("info4");
+    var btn1 = document.getElementById("btn1");
+    var next = document.getElementById("next");
+    var prev = document.getElementById("prev");
+    var p = document.getElementById("p");
+    var first = document.getElementById("first");
+    info1.style.display = "none";
+    info2.style.display = "none";
+    info3.style.display = "none";
+    info4.style.display = "none";
+    img1.onmouseover = function(){
+        info1.style.display = "";
+    }
+    img1.onclick = function(){
+        alert("正在跳转");
+        newWindow = window.open("https://baike.baidu.com/item/%E5%A7%9C%E6%98%87%E6%B6%A6","姜昇润");
+    }
+    img1.onmouseout = function(){
+        info1.style.display = "none";
+    }
+    img2.onmouseover = function(){
+        info2.style.display = "";
+    }
+    img2.onclick = function(){
+        alert("正在跳转");
+        newWindow = window.open("https://baike.baidu.com/item/%E5%AE%8B%E6%97%BB%E6%B5%A9","宋闵浩");
+    }
+    img2.onmouseout = function(){
+        info2.style.display = "none";
+    }
+    img3.onmouseover = function(){
+        info3.style.display = "";
+    }
+    img3.onclick = function(){
+        alert("正在跳转");
+        newWindow = window.open("https://baike.baidu.com/item/%E9%87%91%E7%A7%A6%E7%A6%B9/16343138","金秦禹");
+    }
+    img3.onmouseout = function(){
+        info3.style.display = "none";
+    }
+    img4.onmouseover = function(){
+        info4.style.display = "";
+    }
+    img4.onclick = function(){
+        alert("正在跳转");
+        newWindow = window.open("https://baike.baidu.com/item/%E6%9D%8E%E6%98%87%E5%8B%8B","李昇勋");
+    }
+    img4.onmouseout = function(){
+        info4.style.display = "none";
+    }
+    btn1.onclick = function(){
+        document.documentElement.scrollTop = document.body.scrollTop = 0;
+    }
+    var i = 2;
+    next.onclick = function(){
+        banner1.style.background = "url(./winner/picture" + i + ".jpg) no-repeat center center";
+        i++;
+        if (i == 8){
+            i = 1;
+        }
+    }
+    prev.onclick = function(){
+        banner1.style.background = "url(./winner/picture" + i + ".jpg) no-repeat center center";
+        i--;
+        if (i == 0){
+            i = 7;
+        }
+    }
+    var title = document.getElementsByClassName("title");
+    title[0].style.marginLeft = "0";
+    var intervalId = setInterval(function(){
+        var marginLeft = parseInt(title[0].style.marginLeft);
+        if (marginLeft == 1200){
+            title[0].style.marginLeft = "0";
+            marginLeft = 0;
+        }
+        title[0].style.marginLeft = (marginLeft + 1) + "px";
+    },10)
+    search.onfocus = function(){
+        p.innerText = "winner的《Really Really》不可错过哦";
+    }
+    search.onblur = function(){
+        p.innerText = "";
+    }
+</script>
+</html>
